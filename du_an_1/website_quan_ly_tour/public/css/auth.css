@@ -1,0 +1,374 @@
+:root {
+    --fpt-orange: #ff7300;
+    --fpt-orange-dark: #d95a00;
+}
+
+body {
+    /* FPT orange gradient */
+    background: linear-gradient(120deg, var(--fpt-orange) 0%, rgb(250, 156, 5) 100%);
+    min-height: 100vh;
+}
+
+/* ===== Common Auth Styles ===== */
+.auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.auth-card {
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(255, 115, 0, 0.13);
+    overflow: hidden;
+}
+
+.auth-header {
+    background: linear-gradient(90deg, var(--fpt-orange) 55%, #ff9d00 100%);
+    padding: 2rem 1.5rem 1.2rem 1.5rem;
+    text-align: center;
+}
+
+.auth-header h1,
+.auth-header h2 {
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 0.25rem;
+    color: #fff;
+}
+
+.auth-header h1 {
+    font-size: 2.5rem;
+}
+
+.auth-header h2 {
+    font-size: 2rem;
+}
+
+.auth-header .brand-icon {
+    font-size: 2.6rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.auth-header .subtitle {
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.95;
+    color: #fff;
+    margin-top: 0.5rem;
+}
+
+.auth-card .card-body {
+    padding: 2.5rem 2rem 2.25rem 2rem;
+}
+
+.text-fpt-orange,
+a.text-fpt-orange,
+a.text-fpt-orange:hover {
+    color: var(--fpt-orange) !important;
+}
+
+/* ===== Login Page Styles ===== */
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(255, 115, 0, 0.13);
+    overflow: hidden;
+}
+
+.login-header {
+    background: linear-gradient(90deg, var(--fpt-orange) 55%, #ff9d00 100%);
+    padding: 2rem 1.5rem 1.2rem 1.5rem;
+}
+
+.login-header h2 {
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+.login-header .brand-icon {
+    font-size: 2.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.login-card .card-body {
+    padding: 2.5rem 2rem 2.25rem 2rem;
+}
+
+.form-control:focus {
+    border-color: var(--fpt-orange);
+    box-shadow: 0 0 0 0.15rem rgba(255, 115, 0, 0.15);
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+}
+
+.btn-login {
+    font-weight: 600;
+    padding: 0.75rem 0;
+    border-radius: 8px;
+    background: var(--fpt-orange);
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 16px rgba(255, 115, 0, 0.13);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btn-login:hover,
+.btn-login:active {
+    background: var(--fpt-orange-dark);
+    color: #fff;
+    box-shadow: 0 7px 32px rgba(255, 115, 0, 0.21);
+}
+
+.login-divider {
+    border-top: 1px dashed #dee2e6;
+    margin: 2rem 0 1.5rem;
+}
+
+.card-title-login {
+    color: var(--fpt-orange);
+}
+
+/* ===== Welcome Page Styles ===== */
+.welcome-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.welcome-card {
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(255, 115, 0, 0.13);
+    overflow: hidden;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.welcome-header {
+    background: linear-gradient(90deg, var(--fpt-orange) 55%, #ff9d00 100%);
+    padding: 2.5rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.welcome-header h1 {
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.welcome-header .brand-icon {
+    font-size: 3.5rem;
+    margin-bottom: 0.75rem;
+    color: #fff;
+}
+
+.welcome-header .subtitle {
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.95;
+    color: #fff;
+    margin-top: 0.5rem;
+}
+
+.welcome-card .card-body {
+    padding: 2.5rem 2rem;
+}
+
+.welcome-alert {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.welcome-alert .alert-heading {
+    font-weight: 700;
+    color: var(--fpt-orange);
+}
+
+.btn-welcome {
+    font-weight: 600;
+    padding: 0.875rem 2rem;
+    border-radius: 8px;
+    background: var(--fpt-orange);
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 16px rgba(255, 115, 0, 0.13);
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.btn-welcome:hover,
+.btn-welcome:active,
+.btn-welcome:focus {
+    background: var(--fpt-orange-dark);
+    color: #fff;
+    box-shadow: 0 7px 32px rgba(255, 115, 0, 0.21);
+    transform: translateY(-2px);
+}
+
+.feature-card {
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    overflow: hidden;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(255, 115, 0, 0.15);
+}
+
+.feature-card .card-body {
+    padding: 2rem 1.5rem;
+}
+
+.feature-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.feature-card h5 {
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+.feature-card .card-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ===== Not Found Page Styles ===== */
+.not-found-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.not-found-card {
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(255, 115, 0, 0.13);
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+}
+
+.not-found-header {
+    background: linear-gradient(90deg, var(--fpt-orange) 55%, #ff9d00 100%);
+    padding: 2.5rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.not-found-header .brand-icon {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    color: #fff;
+}
+
+.not-found-header h1 {
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.not-found-header .subtitle {
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.95;
+    color: #fff;
+    margin-top: 0.5rem;
+}
+
+.not-found-card .card-body {
+    padding: 2.5rem 2rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 767.98px) {
+    .login-card,
+    .welcome-card {
+        border-radius: 12px;
+    }
+    
+    .login-header,
+    .welcome-header {
+        padding: 1.3rem 1.1rem 1rem 1.1rem;
+    }
+    
+    .welcome-header {
+        padding: 1.5rem 1rem;
+    }
+    
+    .login-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .welcome-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .login-header .brand-icon {
+        font-size: 2rem;
+    }
+    
+    .welcome-header .brand-icon {
+        font-size: 2.5rem;
+    }
+    
+    .login-card .card-body,
+    .welcome-card .card-body {
+        padding: 1.5rem 1rem 1.5rem 1rem;
+    }
+    
+    .feature-icon {
+        font-size: 2.5rem;
+    }
+    
+    .not-found-card {
+        border-radius: 12px;
+    }
+    
+    .not-found-header {
+        padding: 1.5rem 1rem;
+    }
+    
+    .not-found-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .not-found-header .brand-icon {
+        font-size: 3rem;
+    }
+    
+    .not-found-card .card-body {
+        padding: 1.5rem 1rem;
+    }
+}
+
